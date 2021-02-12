@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="./surveyform.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
 <body id="main">
@@ -15,41 +16,40 @@
 
 <form id="survey-form">
 
-    <div>
-        <label for="name" id="name-label">Name:</label>
+    <div class="mb-3">
+        <label for="name" id="name-label" class="form-label">Name:</label>
         <input type="text"  id="name" placeholder="Enter your name." required><br>
     </div>
 
-    <div>
-        <label for="email" id="email-label">Email:</label>
+    <div class="mb-3">
+        <label for="email" id="email-label" class="form-label">Email:</label>
         <input id="email" type="email" placeholder="Enter your email." required>
     </div>
 
-    <div>
-        <label for="number" id="number-label">Age:</label>
+    <div class="mb-3">
+        <label for="number" id="number-label" class="form-label">Age:</label>
         <input id="number" type="number" name="number" min="18" max="120" placeholder="Age." required>
     </div>
 
-
-    <div>
-        <input type="radio" id="male" name="attribute" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="attribute" value="female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="other" name="attribute" value="other">
-        <label for="other">Other</label> 
+    <div class="mb-3" class="form-check">
+        <input class="form-check-input" type="radio" id="male" name="attribute" value="male">
+        <label class="form-check-label" for="male">Male</label><br>
+        <input class="form-check-input" type="radio" id="female" name="attribute" value="female">
+        <label class="form-check-label" for="female">Female</label><br>
+        <input class="form-check-input" type="radio" id="other" name="attribute" value="other">
+        <label class="form-check-label" for="other">Other</label> 
     </div>
 
-    <div>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="attribute">
+    <div class="mb-3" class="form-check">
+        <input class="form-check-input" type="checkbox" id="vehicle1" name="vehicle1" value="attribute">
         <label for="vehicle1"> I have a bike</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="attribute">
+        <input class="form-check-input" type="checkbox" id="vehicle2" name="vehicle2" value="attribute">
         <label for="vehicle2"> I have a car</label><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="attribute">
+        <input class="form-check-input" type="checkbox" id="vehicle3" name="vehicle3" value="attribute">
         <label for="vehicle3"> I have a boat</label>
     </div>
 
-    <div>
+    <div class="mb-3">
         <label for="dropdown">Choose a car:</label>
         <select name="cars" id="dropdown">
         <option value="volvo">Volvo</option>
@@ -59,15 +59,17 @@
         </select>
     </div>
 
-    <div>
+    <div class="mb-3">
         <label for="w3review">Review:</label>
         <textarea id="w3review" name="w3review" rows="4" cols="50">
         Send your thoughts.
         </textarea>
     </div>
     
-    <p><input id="submit" type="submit" value="Submit"></p>
-        
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+       
 </form>
 
 </body>
