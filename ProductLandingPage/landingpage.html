@@ -8,7 +8,7 @@
   <body>
 
     <header id="header">
-        <div>
+        <div id="header-container">
           <div>
             <a href="index.html">
               <img id="header-img" src="https://www.crearlogogratisonline.com/images/crearlogogratis_1024x1024_01.png">
@@ -19,13 +19,13 @@
               <div class="container">
                       <ul>
                           <li class="nav-item">
-                              <a href="" class="nav-link">Inicio</a>
+                              <a href="#video" class="nav-link">Video</a>
                           </li>
                           <li class="nav-item">
-                              <a href="" class="nav-link">Nosotros</a>
+                              <a href="#form" class="nav-link">Form</a>
                           </li>
                           <li class="nav-item">
-                              <a href="" class="nav-link">Servicios</a>
+                              <a href="#submit" class="nav-link">Submit</a>
                           </li>
                       </ul>
               </div><!--container-->
@@ -34,17 +34,22 @@
         </div>
       </header>
 
+      <hr/>
 
     <iframe id="video" width="420" height="315"
     src="https://www.youtube.com/embed/tgbNymZ7vqY">
     </iframe>
 
+     <div class="text">
+        <p>I'm baby chartreuse glossier post-ironic celiac, truffaut master cleanse williamsburg flexitarian aesthetic. Enamel pin bicycle rights stumptown messenger bag. Echo park ramps vexillologist, kale chips prism four dollar toast street art pok pok af cornhole scenester flannel forage. Leggings cray flannel selfies everyday carry unicorn ethical pickled marfa man braid af yr vexillologist photo booth shoreditch. Quinoa cronut woke, viral chia pour-over YOLO.<//p> <p>Selvage plaid 3 wolf moon poke etsy. Roof party raw denim vexillologist tofu. Hammock literally letterpress la croix disrupt yr four dollar toast brunch asymmetrical messenger bag PBR&B selfies af occupy. Single-origin coffee tousled butcher farm-to-table heirloom, echo park adaptogen intelligentsia. Brunch live-edge master cleanse keytar food truck semiotics, shoreditch flexitarian.</p>
+    </div>
+    
     <form action="https://www.freecodecamp.com/email-submit" id="form">
         <div class="mb-3">
             <label for="email" id="email-label" class="form-label">Email:</label>
-            <input id="email" type="email" placeholder="Enter your email." required>
+            <input id="email" type="email" name="email" placeholder="Enter your email." required>
         </div>
-        <input type="submit" id="submit" class="btn btn-light" value="Send">
+        <input type="submit" id="submit" value="Send">
       </form>
 
 
