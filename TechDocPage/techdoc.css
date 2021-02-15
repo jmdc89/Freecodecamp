@@ -1,0 +1,19 @@
+
+#main-doc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    font-family: Roboto;
+    color: black;
+}
+
+#navbar {
+    background-color: rgb(206, 203, 203);  
+    grid-column: 1;
+    grid-row: 1;
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        background-color: red;  
+     
+  }
